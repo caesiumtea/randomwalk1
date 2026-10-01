@@ -7,7 +7,7 @@ function setup() {
   red = 100;
   green = 100;
   blue = 100;
-  size = 50;
+  size = 30;
 }
 
 function draw() {
