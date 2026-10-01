@@ -1,4 +1,4 @@
-let x, y, red, green, blue, radius;
+let x, y, red, green, blue, size;
 function setup() {
   createCanvas(400, 400);
   background(100, 200, 300);
@@ -7,14 +7,14 @@ function setup() {
   red = 100;
   green = 100;
   blue = 100;
-  radius = 50;
+  size = 50;
 }
 
 function draw() {
     red = red + random(-5, 5);
     green = green + random(-5, 5);
     blue = blue + random(-5, 5);
-    radius = radius + random(-2, 2);
+    size = size + random(-2, 2);
     x = x + random(-5, 5);
     if (x < 0) { // prevent running off edge
         x = 0;
@@ -29,5 +29,5 @@ function draw() {
     }
     noStroke();
     fill(red, green, blue);
-    ellipse(x, y, radius);
+    ellipse(x, y, size);
 }
