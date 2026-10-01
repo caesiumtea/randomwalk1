@@ -9,7 +9,6 @@ function setup() {
 function draw() {
     x = x + random(-5, 5);
     y = y + random(-5, 5);
-    noStroke();
     fill(100);
     ellipse(x, y, 50, 50);
 }
