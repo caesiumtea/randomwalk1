@@ -42,13 +42,13 @@ function draw() {
     }
 
     // position
-    x = x + random(-5, 5);
+    x = x + random(-10, 10);
     if (x < 0) { // prevent running off edge
         x = 0;
     } else if (x > width) {
         x = width;
     }
-    y = y + random(-5, 5);
+    y = y + random(-10, 10);
     if (y < 0) { // prevent running off edge
         y = 0;
     } else if (y > height) {
